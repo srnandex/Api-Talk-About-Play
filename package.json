@@ -6,7 +6,6 @@
   "scripts": {
     "vercel-build": "npx prisma migrate deploy",
     "start": "nest start",
-    "build": "nest build",
     "start:dev": "nest start --watch"
   },
   "repository": {
