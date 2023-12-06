@@ -5,7 +5,7 @@
   "main": ".src/main.ts",
   "scripts": {
     "build": "nest build",
-    "vercel-build": "npx prisma migrate -d",
+    "vercel-build": "npx prisma migrate",
     "start": "nest start",
     "start:dev": "nest start --watch"
   },
