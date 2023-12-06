@@ -6,17 +6,10 @@ function initialize_db () {
   printf "\n> ASYNC: Instalando dependencias do back-end\n"
   (
     npx npx prisma migrate deploy
+    nest start
   )
 }
 
-
-function initialize_nest() {
-  printf "\n> ASYNC: Instalando dependencias gerais"
-  (
-    npm start
-  )
-}
-
-initialize_db & initialize_nest
+initialize_db 
 
 printf "\n> Script terminado\n\n"
