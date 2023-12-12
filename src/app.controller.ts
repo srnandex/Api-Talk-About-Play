@@ -9,7 +9,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @IsPublic()
-  @Get('/')
+  @Get('/tes')
   getHello(): string {
     return this.appService.getHello();
   }
